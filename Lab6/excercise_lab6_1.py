@@ -1,0 +1,24 @@
+"""
+Nane: Nattakarn Phaewkasin
+ID: 364411760013
+Grop: MIT421
+เขียนโปรแกรมเพื่อรับค่าอินพุตจากผู้ใช้เป็นเลขจำนวนเต็ม
+จำนวน 2 ชุดข้อมูลโดยมีชุดข้อมูลชึดละ 10ตัว
+จากนั้นให้แสดงข้อมูลตัวเลขที่ซ้ำกัน และไม่ซ้ำกันจากข้อมูลจำนวน 2 ชุดนี้
+ทางหน้าจอภาพ
+"""
+s1 = set()
+for i in range(5): #0-9
+    x = int(input(f"enter an integer{i+1}: "))
+    s1.add(x)
+print(s1)
+
+s2 = set()
+for i in range(5): #0-9
+    x = int(input(f"enter an integer{i+1}: "))1
+    s2.add(x)
+print(s2)
+
+print("same integer between s1 and s2: ",s1.intersection(s2))
+print("difference integer between s1 and s2: ",s1.symmetric_difference(s2))
+
